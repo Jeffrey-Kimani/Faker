@@ -201,12 +201,12 @@ public class Miscellaneous {
     private String hash(int nbCharacters) {
         String[] characters = {
                 "0","1","2","3","4","5","6","7","8","9",
-                "a","base","c","d","e","f"
+                "a","c","d","e","f"
         };
 
         String hash = "";
         for (int i = 0; i < nbCharacters; i++) {
-            hash += characters[ran.nextInt(15)];
+            hash += characters[ran.nextInt(14)];
         }
 
         return hash;
